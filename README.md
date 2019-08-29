@@ -1,13 +1,7 @@
-<script src="//yihui.name/js/math-code.js"></script>
-<!-- Just one possible MathJax CDN below. You may use others. -->
 # Algorithms-and-Data-Structures
 Just some projects for algorithms and data structures
 # Natural form for algorithmic complexity
-Hi `$z = x + y$`.
-
-`$$a^2 + b^2 = c^2$$`
-
-`$$\begin{vmatrix}a & b\\
-c & d
-\end{vmatrix}=ad-bc$$`
-
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+       \\[ a^2 = b^2 + c^2 \\] 
+        </script>
