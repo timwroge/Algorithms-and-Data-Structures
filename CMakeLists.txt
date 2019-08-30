@@ -21,7 +21,7 @@ if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
 
     add_custom_target (readme
         DEPENDS ${PRECOMPILEDREADME} ${OUTPUT_README}
-        COMMAND python -m readme2tex --usepackage "tikz" --branch master --usepackage "xcolor" --nocdn --svgdir svgs/ --output README.md --username timwroge  --project Algorithms-and-Data-Structures  PRECOMPILEDREADME.md
+        COMMAND python -m readme2tex --branch master --bustcache --output README.md PRECOMPILEDREADME.md
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
