@@ -1,17 +1,15 @@
 #
 # CMakeLists.txt
-#
+# Copyright Tim Wroge 2019
 
 cmake_minimum_required (VERSION 3.5 FATAL_ERROR)
 
 project (Algorithms
     VERSION 1.0.0
-    LANGUAGES NONE
+    LANGUAGES CXX
 )
 set(PRECOMPILED_README ${CMAKE_SOURCE_DIR}/PRECOMPILEDREADME.md)
 set(OUTPUT_README ${CMAKE_SOURCE_DIR}/README.md)
-list (INSERT CMAKE_MODULE_PATH 0 "${CMAKE_SOURCE_DIR}/cmake")
-include (BuildSystemCore)
 
 if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
 
@@ -21,9 +19,18 @@ if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
 
     add_custom_target (readme
         DEPENDS ${PRECOMPILEDREADME} ${OUTPUT_README}
-        COMMAND python -m readme2tex --branch master --bustcache --output README.md PRECOMPILEDREADME.md
+        COMMAND python -m readme2tex  --branch master --bustcache --output README.md PRECOMPILEDREADME.md
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+
+    add_custom_target (tests
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
 endif ()
+# add some compiler flags
+set (CMAKE_CXX_FLAGS " -std=c++14 -fexceptions -Werror -Wall")
 
+#add subdirectories for the rest of the project
+
+add_subdirectory(C++-Specifics)
