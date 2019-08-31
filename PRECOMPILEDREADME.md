@@ -12,10 +12,25 @@ $$f(x)\;=\;O(g(x)))$$
 
 if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
 
-$$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
+$$ | f(x) | <= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
 
 The best way to interpret this is to think of $\hat{x}$ as very large value of x. So for all values of $x$
 greater than $\hat{x}$, the value of the big O version of the function $g(x)$ is going to approach $f(x)$
-for values of $x$ that are very large. What this means practically, is that the largest order terms (what is
+for values of $x$ that are very large. What this means practically, is that the largest order term (what is 
 left after the $O()$ operation) will dominate the function asymtotically.
 
+## Formal definition of $\Omega$ Function
+
+$$f(x)\;=\;\Omega (g(x)))$$
+
+if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
+
+$$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
+
+## Formal definition of $\Theta$ Function
+
+$$f(x)\;=\;\Theta (g(x)))$$
+
+if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
+
+$$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
