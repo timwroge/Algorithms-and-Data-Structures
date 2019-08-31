@@ -19,7 +19,7 @@ if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
 
     add_custom_target (readme
         DEPENDS ${PRECOMPILEDREADME} ${OUTPUT_README}
-        COMMAND python3 -m readme2tex  --branch master --output README.md PRECOMPILEDREADME.md --nocdn --pngtrick
+        COMMAND python3 -m readme2tex  --svgdir equations --branch master --output README.md PRECOMPILEDREADME.md --nocdn --pngtrick
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
