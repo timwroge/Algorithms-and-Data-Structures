@@ -8,9 +8,14 @@ update the README whenever the PRECOMPILEDREADME is updated.
 
 ## Formal definition of Big O Function
 
-$$f(n)\;=\;O(g(x)))$$
+$$f(x)\;=\;O(g(x)))$$
 
 if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
 
-$$ | f(x) | >= \hat{c} \cdot |g(x)|\; \forall x > \hat{x} $$
+$$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
+
+The best way to interpret this is to think of $\hat{x}$ as very large value of x. So for all values of $x$
+greater than $\hat{x}$, the value of the big O version of the function $g(x)$ is going to approach $f(x)$
+for values of $x$ that are very large. What this means practically, is that the largest order terms (what is
+left after the $O()$ operation) will dominate the function asymtotically.
 
