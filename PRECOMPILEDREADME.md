@@ -32,7 +32,8 @@ $$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
 
 $$f(x)\;=\;\Theta (g(x)))$$
 
-if $Omega (g(x)) == O(g(x) )$
+if $\Omega (g(x)) == O(g(x) )$
 
 This means that in order to prove the exact boundry condition for a given function of $g(x)$, you have
 to squash the function between the lower ($\Omega()$) and the upper bounds (O()).
+

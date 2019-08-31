@@ -32,7 +32,8 @@ if there exists a constant <img alt="$\hat{c}$" src="equations/0038bd66465254af4
 
 <p align="center"><img alt="$$f(x)\;=\;\Theta (g(x)))$$" src="equations/9360992bbb45b843e94962cbb38be182.png" align="middle" width="125.62202399999998pt" height="16.438356pt"/></p>
 
-if <img alt="$Omega (g(x)) == O(g(x) )$" src="equations/ba71a7855df2a3174a7ed14694426ed5.png" align="middle" width="186.69308789999997pt" height="24.65753399999998pt"/>
+if <img alt="$\Omega (g(x)) == O(g(x) )$" src="equations/c1c76c151e391b6614e8166a4d768930.png" align="middle" width="146.36309325pt" height="24.65753399999998pt"/>
 
 This means that in order to prove the exact boundry condition for a given function of <img alt="$g(x)$" src="equations/ffcbbb391bc04da2d07f7aef493d3e2a.png" align="middle" width="30.61077854999999pt" height="24.65753399999998pt"/>, you have
 to squash the function between the lower (<img alt="$\Omega()$" src="equations/27c2958fff65a3dfb582496a642a6aa7.png" align="middle" width="24.657613199999986pt" height="24.65753399999998pt"/>) and the upper bounds (O()).
+
