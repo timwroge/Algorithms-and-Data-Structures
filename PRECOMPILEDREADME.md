@@ -12,4 +12,5 @@ $$f(n)\;=\;O(g(x)))$$
 
 if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
 
-$$ | f(x) | >= \hat{c} * |g(x)| \forall x > \hat{x} $$
+$$ | f(x) | >= \hat{c} \cdot |g(x)|\; \forall x > \hat{x} $$
+
