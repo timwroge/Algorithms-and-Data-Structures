@@ -27,10 +27,12 @@ if there exists a constant $\hat{c}$ and $\hat{x}$ such that
 
 $$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
 
+
 ## Formal definition of $\Theta$ Function
 
 $$f(x)\;=\;\Theta (g(x)))$$
 
-if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
+if $Omega (g(x)) == O(g(x) )$
 
-$$ | f(x) | >= \hat{c} \cdot |g(x)|\;\;\; \forall x > \hat{x} $$
+This means that in order to prove the exact boundry condition for a given function of $g(x)$, you have
+to squash the function between the lower ($\Omega()$) and the upper bounds (O()).
