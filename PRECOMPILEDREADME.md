@@ -6,9 +6,10 @@ I will try to work through some of the basic implementations and theory behind t
 as much detail as I can here. I used readme2tex to generate the equations and generated a git hook to
 update the README whenever the PRECOMPILEDREADME is updated.
 
-##Formal definition of Big O Function
+## Formal definition of Big O Function
 
 $$f(n)\;=\;O(g(x)))$$
 
-if there exists a constant
+if there exists a constant $\hat{c}$ and $\hat{x}$ such that 
 
+$$ | f(x) | >= \hat{c} * |g(x)| \forall x > \hat{x} $$
