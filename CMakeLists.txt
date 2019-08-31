@@ -30,6 +30,8 @@ if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
 endif ()
 # add some compiler flags
 set (CMAKE_CXX_FLAGS " -std=c++14 -fexceptions -Werror -Wall")
+# makes teh binaries go to release within the cmake binary directory
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/release)
 
 #add subdirectories for the rest of the project
 

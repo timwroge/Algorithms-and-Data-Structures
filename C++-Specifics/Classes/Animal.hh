@@ -1,7 +1,8 @@
 #include <string>
+#pragma once
 
 class Animal{
-    private:
+    protected:
         std::string Name;
         int Age;
         double Weight;
